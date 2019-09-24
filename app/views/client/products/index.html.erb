@@ -1,0 +1,9 @@
+<h1>Products Index</h1>
+
+<%= @products.each do |product| %>
+  <h2><%= product["name"] %></h2>
+  <h4><%= product["description"] %></h4>
+  <h4><%= product["price"] %></h4>
+  <br>
+<% end %> 
+

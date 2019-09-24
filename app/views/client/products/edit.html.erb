@@ -1,0 +1,26 @@
+<h1>New Product</h1>
+
+<%= form_tag "/client/products", method: :post do %>
+
+<form action="/client/products" method="post>">
+
+  <div>
+    Name: <input type="text" name="name" value="<%= @product['name'] %>">
+  </div>
+  <div>
+    Description: <input type="text" name="descripton" value="<%= @product['descripton'] %>">
+  </div>
+  <div>
+    Price: <input type="float" name="price" value="<%= @product['price'] %>">
+  </div>
+  <div>
+    Tax: <input type="float" name="tax" value="<%= @product['tax'] %>">
+  </div>
+  <div>
+    Total: <input type="float" name="total" value="<%= @product['total'] %>">
+  </div>
+  <div>
+    Image URL: <input type="text" name="image_url" value="<%= @product['image_url'] %>">
+  </div>
+  <input type="submit" value="Create Product"> 
+<% end %>
